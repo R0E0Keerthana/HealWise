@@ -27,7 +27,7 @@ You'll need a JSP container like Tomcat or a web server configured to handle JSP
 - The server-side JSP file (*process.jsp*) would ideally analyze the user's answers submitted from the questionnaire.
 - It concluded the dosha based on a scoring system applied to the user's answers.
 - The JSP would then display information about the user's dominant dosha on the same page, including:
-- - Description of the dosha
+  - Description of the dosha
   - Health complications associated with imbalanced dosha
   - Favorable and unfavorable foods
   - Recommendations for maintaining balance
