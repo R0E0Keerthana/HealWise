@@ -32,20 +32,20 @@ You'll need a JSP container like Tomcat or a web server configured to handle JSP
   - Favorable and unfavorable foods
   - Recommendations for maintaining balance
  
-# Contributing to Healwise
+# Contributing to HealWise
 
-We welcome your contributions to the Healwise project! Here's how you can help us improve:
-- **Fork the Repository:** Create your own copy of the Healwise repository on GitHub using the "Fork" button.
+We welcome your contributions to the HealWise project! Here's how you can help us improve:
+- **Fork the Repository:** Create your own copy of the HealWise repository on GitHub using the "Fork" button.
 - **Clone Your Fork:** Clone your forked repository to your local machine using Git commands or your preferred Git client.
 - **Make Changes:** Make your modifications to the code, following best practices and coding conventions. Ensure you test your changes thoroughly.
 - **Commit Your Changes:** Commit your changes with clear and concise commit messages describing your contributions.
 - **Push to Your Fork:** Push your committed changes to your forked repository on GitHub.
-- **Create a Pull Request:** In GitHub, navigate to your forked repository and create a pull request to the main Healwise repository. This will notify the us about your proposed changes.
+- **Create a Pull Request:** In GitHub, navigate to your forked repository and create a pull request to the main HealWise repository. This will notify us about your proposed changes.
 
 # Disclaimer
 
-This project is currently under development, and the Healwise application is a work in progress. While the provided functionalities offer a glimpse into the potential of the Ayurveda dosha analysis and guidance system, it's important to note that this is not a final product.
-We continue to develop and refine Healwise to enhance its accuracy and user experience. Future features may include integration with healthcare providers, personalized recommendations based on user data, and a more comprehensive knowledge base on Ayurveda.
+This project is currently under development, and the HealWise application is a work in progress. While the provided functionalities offer a glimpse into the potential of the Ayurveda dosha analysis and guidance system, it's important to note that this is not a final product.
+We continue to develop and refine HealWise to enhance its accuracy and user experience. Future features may include integration with healthcare providers, personalized recommendations based on user data, and a more comprehensive knowledge base on Ayurveda.
 We appreciate your understanding and encourage you to contribute to the project's growth.
 
 ***Happy Coding and Healthy Healing!***
