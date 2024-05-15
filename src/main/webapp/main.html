@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Questionnaire</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height:1.6;
+        }
+
+        .container {
+            opacity: 1;
+            transform: scale(0.8);
+            transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+        }
+
+        .active {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        header {
+            background-color: #ff9a9e;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .hero {
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: #fff;
+            padding: 150px 20px;
+        }
+
+        h1 {
+            font-size: 35px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .section {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .gray-bg {
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #ff9a9e;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+
+        #options {
+            padding: 40px 0;
+        }
+       
+       
+        .cta-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: white;
+      color: black;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+        .cta-button:hover {
+      background-color: #555;
+    }
+        /* Styling for the form container */
+        .form-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: white; /* Background color for the form container */
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            overflow: auto; /* Enable scrolling for the form content if it overflows */
+        }
+
+        /* Style for the form elements */
+        form {
+            text-align: left;
+        }
+
+        /* Style for the submit button */
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* Style for the heading */
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Add your other CSS styles here */
+
+        /* Additional styles to add padding to the top of the box */
+        .form-container {
+            padding-top: 50px; /* Adjust the value as needed */
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+        <nav>
+            <div class="container">
+                <h1 style="text-align:center;font-size:35px; font-family: 'Arial';" class="logo">AYURBOT</h1>
+               
+            </div>
+        </nav>
+    </header>
+    <main>
+        <form action="http://localhost:8080/PillayarHanuman/process.jsp" method="post">
+        <section id="services" class="section ">
+            <div class="container">
+                    <b>Enter the Name:</b>
+                    <input type="text"  name="name" required>
+                  <br><br><b>Enter the age:</b>
+                    <input type="text"  name="age"  required><br>
+            </div>
+        </section>
+        <section id="portfolio" class="section gray-bg">
+            <div class="container">
+                <p>Gender:</p>
+                <label><input type="radio"  name="gen" value="m">
+                Male
+                </label><br> <br>
+                <label> <input type="radio" name="gen" value="f">
+                Female
+                </label><br>
+                <br>
+            </div>
+        </section>
+
+
+        <section id="services" class="section ">
+            <div class="container">
+                <h2> Physical Characteristics</h2>
+         <h3>Body Type:</h3>
+        <p>Describe your body frame</p>
+        <label>
+        <input type="radio"  name="body_frame" value="vata" >Narrow Hips (Below 0.6-0.7 feet), Shoulders (1.27 feet and below).
+        </label><br><br>    <label>     <input type="radio"  name="body_frame" value="pitta">Moderate Hip (Between 0.8-0.9 ft), Shoulder Dimensions (Between 1.28 - 1.37 ft).
+         </label><br><br>
+        <label>
+        <input type="radio"  name="body_frame" value="kapha" >Broad Hips (Above 1 feet) , Shoulders (Above 1.38 feet).
+        </label><br>
+         <br>
+    </div>
+        </section>
+
+         
+        <section id="services" class="section gray-bg">
+            <div class="container">
+        <p> How would you describe your ability to manage your weight?</p>
+        <label><input type="radio"  name="manage_weight" value="vata" >I find it difficult to gain weight, and losing weight is also a challenge.
+       </label><br> <br>
+        <label><input type="radio"  name="manage_weight" value="pitta">My weight tends to change according to my diet consumption.
+       </label><br> <br>
+        <label><input type="radio"  name="manage_weight" value="kapha" > I tend to gain weight easily, and losing weight is a struggle.
+        </label><br><br>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h2>Skin:</h2>
+                <p>How would you describe the texture of your skin?</p>
+        <label>
+                <input type="radio"  name="skin_texture" value="vata" >My skin tends to be dry, rough, and prone to flakiness.
+           </label><br>     <br>
+           <label>     <input type="radio"  name="skin_texture" value="pitta">My skin is generally soft, but I may experience occasional redness or inflammation.
+           </label><br>     <br>
+               <label> <input type="radio"  name="skin_texture" value="kapha">My skin is smooth and moist but can feel oily or congested.
+               </label><br> <br>
+            </div>
+        </section>
+
+
+
+
+        <section id="services" class="section gray-bg">
+            <div class="container">
+                <p>Have you ever experienced skin allergies or any other skin conditions, as mentioned in the options given below?</p>
+       <label> <input type="radio"  name="skin_allergy" value="vata">I have experienced dryness, eczema, or skin allergies.
+       
+</label><br>
+                <br><label>
+        <input type="radio"  name="skin_allergy" value="pitta">I have experienced rashes, redness, or sensitivity.
+       
+</label><br><br><label>
+        <input type="radio"  name="skin_allergy" value="kapha">I have experienced congestion, acne, or oiliness.
+       </label><br>
+       <label>
+        <input type="radio"  name="skin_allergy" value="none">None of the above.
+       </label><br>
+       <br> <br>
+            </div>
+        </section>
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h2>Hair</h2>
+          <p>Which of the options best describes the natural state of your hair?</p>
+        <label>  <input type="radio"  name="hair_type" value="vata">
+          My hair tends to be dry, frizzy, and prone to split ends.
+         </label><br><br><label> <input type="radio"  name="hair_type" value="pitta">
+          My hair is generally fine, but I may experience excess oiliness or dandruff.
+        </label><br><br><label>  <input type="radio"  name="hair_type" value="kapha">
+          My hair is thick, lustrous, and may become oily or heavy.
+        </label>
+        <br>
+        <label>
+        <input type="radio"  name="hair_type" value="none">None of the above.
+       </label><br>
+       <br>    </div>
+        </section>
+
+
+
+        <section id="services" class="section gray-bg">
+            <div class="container">
+                <br> <p>Have you experienced any common hair issues such as hair loss, premature greying, or thinning?</p>
+              <label>  <input type="radio"  name="hair_issue" value="vata">
+                I have experienced hair loss or thinning.
+              </label><br><br><label>  <input type="radio"  name="hair_issue" value="pitta">
+                I have noticed premature greying or hair thinning.
+               </label><br><br><label> <input type="radio"  name="hair_issue" value="kapha">
+                I have had issues with excess oiliness or heavy hair.
+      </label><br><br>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h2>Digestion and Appetite</h2>
+         <h3>Dietary Pattern:</h3>
+         <p>Describe your dietary preferences, including favourite foods and dislikes.</p>
+        <label> <input type="radio"  name="food" value="vata">
+         Preference for light, airy foods.
+        </label><br><br><label> <input type="radio"  name="food" value="pitta">
+         Preference for warm, spicy foods.
+        </label><br><br><label> <input type="radio" name="food" value="kapha">
+         Preference for sweet, heavy foods.
+         </label><br><br>   </div>
+        </section>
+
+
+
+        <section id="services" class="section gray-bg">
+            <div class="container">
+                <p>How would you describe your appetite and digestion?</p>
+        <label> <input type="radio"  name="digestion" value="vata">
+         I have a variable appetite, and my digestion is often irregular or sensitive.
+        </label><br><br><label> <input type="radio" name="digestion" value="pitta">
+         I have a strong appetite, and my digestion is usually efficient but can be intense.
+        </label><br><br><label> <input type="radio"  name="digestion" value="kapha">
+         I have a steady appetite, and my digestion is slow and steady.
+        </label><br>  </div>
+        </section>
+
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h2> Preferred Tastes and Food Aversions:</h2>
+                <p>Which tastes do you naturally prefer or crave the most in your daily diet?</p>
+               <label> <input type="radio"  name="taste" value="vata">
+                I enjoy light, astringent, and bitter tastes like salads, leafy greens, and beans.
+              </label><br><br><label>  <input type="radio"  name="taste" value="pitta">
+                I tend to favour spicy, pungent, and sour tastes like chilli, vinegar, and citrus.
+            </label><br><br><label>    <input type="radio"  name="taste" value="kapha">
+                I prefer sweet and heavy tastes like sugar, dairy, and bread.
+           </label><br> </div>
+        </section>
+
+
+        <section id="services" class="section gray-bg">
+            <div class="container">
+                <p>  Are there any tastes or foods that you tend to avoid or dislike?</p>
+              <label>  <input type="radio"  name="avoid" value="vata">
+                I tend to avoid dry, cold, or raw foods.
+            </label><br><br><label>    <input type="radio"  name="avoid" value="pitta">
+                I dislike overly spicy or hot foods.
+            </label><br><br><label>    <input type="radio"  name="avoid" value="kapha">
+                I avoid heavy, greasy, or deep-fried foods.
+            </label><br><br>
+            <label>
+        <input type="radio"  name="avoid" value="none">None of the above.
+       </label><br><br>
+       <label>
+        <input type="radio"  name="avoid" value="all">All of the above.
+       </label><br>
+       </div>
+        </section>
+
+
+        <section id="portfolio" class="section">
+            <div class="container">
+               
+         <h2> Energy and Activity</h2>
+         <h3> Energy Levels:</h3>
+         <p>How would you describe your energy levels throughout the day?</p>
+         <label><input type="radio" name="energy"  value="vata">
+         Short bursts of energy.
+        </label><br><br><label> <input type="radio"  name="energy" value="pitta">
+         I have consistent energy levels but can become irritable if I don't eat regularly.
+       </label><br><br><label>  <input type="radio"  name="energy" value="kapha">
+         Slow steady and high energy levels for extended periods.
+          </label><br>  </div>
+        </section>
+
+
+
+        <section id="services" class="section gray-bg">
+            <div class="container">
+                <p> Do your emotions have a significant impact on your energy levels?</p>
+        <label> <input type="radio"  name="emotion" value="vata">
+         My energy levels can be influenced by emotional fluctuations.
+      </label><br><br><label>   <input type="radio"  name="emotion" value="pitta">
+         Emotional intensity can affect my energy, and I may need time to recover.
+        </label><br><br><label> <input type="radio"  name="emotion" value="kapha">
+         I tend to maintain a stable energy level regardless of emotions.
+          </label><br>  </div>
+        </section>
+
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h2>Sleep:</h2>
+                <p>Describe your sleep patterns: </p>
+               <label> <input type="radio" name="sleep" value="vata">
+                Wakes easily, difficult to fall asleep.
+           </label><br><br><label>     <input type="radio" name="sleep" value="pitta">
+                Falls asleep easily, stays asleep, and has difficulty sleeping in warm weather.
+             </label><br><br><label>   <input type="radio"  name="sleep" value="kapha">
+                Sleeps long and deep, has difficulty waking up
+          </label><br>  </div>
+        </section>
+
+
+
+        <section id="services" class="section gray-bg">
+            <div class="container">
+                <p>Do you experience frequent sleep disturbances, such as nightmares, night sweats, or sleepwalking?</p>
+             <label>   <input type="radio"  name="sleep_disturb" value="vata">
+                I experience sleep disturbances like nightmares or restless sleep.
+              </label><br><br><label>  <input type="radio"  name="sleep_disturb" value="pitta">
+                I occasionally have intense dreams or night sweats.
+            </label><br><br><label>    <input type="radio" name="sleep_disturb" value="kapha">
+                I generally sleep soundly without frequent disturbances.
+           </label><br> </div>
+        </section>
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h2> Emotions and Mental Characteristics</h2>
+                <h3>Emotions:</h3>
+                <p>How do you generally react to stress?</p>
+               <label> <input type="radio"  name="stress" value="vata">
+                Anxious, worried and overwhelmed.
+            </label><br><br><label>    <input type="radio" name="stress" value="pitta">
+                Irritable, short tempered and aggressive.
+            </label><br><br><label>    <input type="radio"  name="stress" value="kapha">
+                Withdrawn and calm.
+          </label><br>  </div>
+        </section>
+
+
+
+        <section id="services" class="section gray-bg">
+            <div class="container">
+                <p>Are you prone to mood swings or emotional fluctuations?</p>
+              <label>  <input type="radio" name="mood_swings" value="vata" >
+                Yes (Involves periods of enthusiasm and creativity followed by sudden sadness or despair).
+            </label><br><br><label>    <input type="radio"  name="mood_swings" value="pitta">
+                Yes (Involves impatience and frustration when things don’t go as planned).
+            </label><br><br><label>    <input type="radio"  name="mood_swings" value="kapha">
+                No (Involves resistance to change or reluctance to adapt to new situations).
+          </label><br>  </div>
+        </section>
+
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h2>Mental Focus:</h2>
+         <p>Describe your mental focus and concentration: </p>
+       <label>  <input type="radio"  name="focus" value="vata">
+         Scattered (Easily distracted).
+       </label><br><br><label>  <input type="radio"  name="focus" value="pitta">
+         Variable (Can handle interruptions but can feel annoyed).
+        </label><br><br><label> <input type="radio"  name="focus" value="kapha">
+         Sharp and Intense.
+          </label><br>  </div>
+        </section>
+
+
+        <section id="services" class="section gray-bg">
+            <div class="container">
+                <p>Do you have a good memory or experience forgetfulness?</p>
+              <label>  <input type="radio"  name="memory" value="vata">
+                Short term, quick to forget.
+            </label><br><br><label>    <input type="radio"  name="memory" value="pitta">
+                Medium but accurate memory.
+            </label><br><br><label>    <input type="radio"  name="memory" value="kapha">
+                Takes long time to remember, but is sustained.
+          </label><br>  </div>
+        </section>
+
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h2>Lifestyle and Habits</h2>
+         <p>What type of physical activities do you prefer?</p>
+       <label>  <input type="radio"  name="physical" value="vata">
+         Yoga, gentle stretching, walking or tai chi.
+         </label><br> <br><label> <input type="radio"  name="physical" value="pitta">
+         Moderate intensity exercises like swimming, cycling or dancing.
+       </label><br> <br><label>   <input type="radio"  name="physical" value="kapha">
+         High intensity activities like running, weightlifting or team sports.
+      </label><br>      </div>
+        </section>
+
+
+        <section id="services" class="section gray-bg">
+            <div class="container">
+                <h3>Temperature Preferences:</h3>
+         <p>How do you handle extreme temperatures?</p>
+       <label>  <input type="radio"  name="temperature" value="vata">
+         I dislike cold weather, feel chilled easily, and prefer warm layers of clothing but seek outdoor activities during summer
+        </label><br> <br><label>  <input type="radio"  name="temperature" value="pitta">
+         I tend to stay indoors, use air conditioners during extreme heat but I do not mind cold weather.
+         </label><br><br> <label> <input type="radio"  name="temperature" value="kapha">
+         I can tolerate moderate hot and cold weather but may need shade or extra layers respectively.
+        </label><br>    </div>
+        </section>
+
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h2> Health History</h2>
+                <h3>Health Conditions
+                </h3>
+                <p>Select the option that mentions the majority of specific health conditions or ailments that you have experienced frequently, among the three given below:
+                </p>
+              <label>  <input type="radio"  name="health" value="vata">
+                Digestive Issues, Joint Pain, Dry Skin, Anxiety and Insomnia, Irregular Appetite, Low Energy
+                </label><br> <br><label>  <input type="radio"  name="health" value="pitta">
+                 Acidity and Heartburn, Skin Issues, Irritability and Anger, Inflammatory Conditions, Excessive Sweating, Hyperacidity.
+                 </label><br> <br><label> <input type="radio"  name="health" value="kapha">
+                 Weight Gain, Congestion, Lethargy, Depression, Excessive Mucus, Water Retention.
+       
+          </label><br>  </div>
+        </section>
+
+
+        <section id="services" class="section gray-bg">
+            <div class="container">
+               
+         <h3>Family Health Patterns</h3>
+         <p> Are there any recurring health patterns or conditions that run in your family? Please select the option that applies to you:</p>
+         
+      <label>   <input type="radio"  name="family" value="vata">
+         Nervous System Disorders.
+         </label><br> <br><label> <input type="radio"  name="family" value="pitta">
+         Digestive Issues.
+         </label><br><br> <label> <input type="radio"  name="family" value="kapha">
+         Respiratory Conditions.
+        </label><br><br>   <label>
+        <input type="radio"  name="family" value="none">None of the above.
+       </label><br><br>
+       <label>
+        <input type="radio"  name="family" value="all">All of the above.
+       </label><br> </div>
+        </section>
+
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h2>Seasonal Influence</h2>
+                <h3> Seasonal Comparison Attribute</h3>
+                <p>Which of the following seasons, do you think, aligns with your qualities and characteristics?</p>
+               <label> <input type="radio"  name="season" value="vata">
+                Fall and early winter.
+             </label><br><br> <label>    <input type="radio"  name="season" value="pitta">
+                Summer.
+               </label><br> <br><label>  <input type="radio"  name="season" value="kapha">
+                Spring.
+           </label><br> </div>
+        </section>
+
+        <section>
+            <div class="footer">
+                <br><input type="submit" value="Submit"  class="cta-button">
+               </div>
+        </section>
+    </form>
+       
+
+    <!-- JavaScript code for smooth card stacking transition -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sections = document.querySelectorAll(".container");
+            const windowHeight = window.innerHeight;
+
+            function handleScroll() {
+                sections.forEach(function(section) {
+                    const sectionTop = section.getBoundingClientRect().top;
+
+                    if (sectionTop <= windowHeight * 0.75) {
+                        section.classList.add("active");
+                    } else {
+                        section.classList.remove("active");
+                    }
+                });
+            }
+
+            document.addEventListener("scroll", function() {
+                handleScroll();
+            });
+
+            handleScroll();
+        });
+    </script>
+    </body>
+</html>
