@@ -10,7 +10,7 @@ This project is a simple website that introduces users to Ayurveda and helps the
 
 ### 2.Open the files:
 
-The project consists of two main HTML files:
+The project consists of three files:
 
 - **index.html:** This is the landing page that introduces Ayurveda and the doshas.
 - **main.html:** This is the questionnaire page that collects user information to determine their dosha.
